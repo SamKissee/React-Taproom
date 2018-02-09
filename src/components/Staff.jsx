@@ -4,8 +4,8 @@ import EditKeg from './EditKeg';
 
 function Staff() {
   return(
-    <div>
-      <h1 style={{textAlign: 'center', color: 'white'}}>Staff Only</h1>
+    <div className="staff">
+      <h1 style={{textAlign: 'center', color: 'white'}}>Employees Only</h1>
       <AddKeg/>
       <EditKeg/>
     </div>
