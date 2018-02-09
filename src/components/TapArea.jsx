@@ -7,7 +7,7 @@ function TapArea(){
     {
       'abv' : '5',
       'brewer' : 'Mother Earth',
-      'img' : './../assets/motherearth.png',
+      'img' : 'http://bit.ly/2BR8XXX',
       'name' : 'Cali Creamin',
       'price' : 'purple',
       'quantity' : '124'
@@ -15,7 +15,7 @@ function TapArea(){
     {
       'abv' : '8',
       'brewer' : 'Mother Earth',
-      'img' : './../assets/motherearth.png',
+      'img' : 'http://bit.ly/2BR8XXX',
       'name' : 'Sintax',
       'price' : 'red',
       'quantity' : '124'
@@ -23,7 +23,7 @@ function TapArea(){
     {
       'abv' : '6',
       'brewer' : 'Laurelwood',
-      'img' : './../assets/laurelwood.png',
+      'img' : 'http://bit.ly/2EPIk45',
       'name' : 'Free Range Red',
       'price' : 'green',
       'quantity' : '124'
@@ -31,7 +31,7 @@ function TapArea(){
     {
       'abv' : '6.5',
       'brewer' : 'Stone',
-      'img' : './../assets/stone.png',
+      'img' : 'http://bit.ly/2EezhwB',
       'name' : 'Stone IPA',
       'price' : 'red',
       'quantity' : '124'
@@ -39,7 +39,7 @@ function TapArea(){
     {
       'abv' : '4.5',
       'brewer' : 'New Belgium',
-      'img' : './../assets/newbelgium.png',
+      'img' : 'http://bit.ly/2EgcEYL',
       'name' : 'Fat Tire',
       'price' : 'purple',
       'quantity' : '124'
