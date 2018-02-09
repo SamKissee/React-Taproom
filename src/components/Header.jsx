@@ -7,7 +7,7 @@ import Filter from './Filter';
 function Header(){
   return (
     <div>
-      <img src={require('../assets/images/taplogo.png')} />
+      <img src={require('../assets/images/taplogo.png' )} />
       <Filter/>
     </div>
   );
