@@ -38,6 +38,20 @@ function Tap(props){
             padding: 10px;
 
           }
+          button{
+            padding: 10px;
+            margin: 3px;
+            border: none;
+            border-radius: 5px;
+          }
+          .buy{
+            color: white;
+            background: teal;
+          }
+          .edit{
+            color: white;
+            background: red;
+          }
         `}
       </style>
       <div className='option'>
@@ -49,6 +63,12 @@ function Tap(props){
         <p>Price: {props.price}</p>
         <p>ABV: {props.abv}</p>
         <p>Quantity: {props.quantity}</p>
+        <div>
+          <button className='buy'>Pint</button>
+          <button className='buy'>32oz</button>
+          <button className='buy'>64oz</button>
+          <button className='edit'>Edit Keg</button>
+        </div>
       </div>
     </div>
   );

@@ -48,8 +48,17 @@ function TapArea(){
 
   return (
     <div>
-      <h1>Homes</h1>
-      <div style={{display: 'flex', flexWrap: 'wrap', margin: '10px'}}>
+      <style jsx>
+        {`
+          .tapArea{
+            width: 90%;
+            margin: 10px auto;
+            display: flex;
+            flex-wrap: wrap;
+          }
+        `}
+      </style>
+      <div className='tapArea'>
         {tapList.map((tap, index) =>
           <Tap
             name={tap.name}
