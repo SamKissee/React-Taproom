@@ -1,6 +1,6 @@
 import React from 'react';
 import Tap from './Tap';
-
+import Staff from './Staff';
 
 function TapArea(){
   let tapList = [
@@ -70,6 +70,7 @@ function TapArea(){
             key={index}/>
         )}
       </div>
+      <Staff/>
     </div>
   );
 }
