@@ -1,13 +1,18 @@
 import React from 'react';
+import Filter from './Filter';
+// import logo from '../assets/images/taplogo.png';
 
 
 
 function Header(){
   return (
     <div>
-      <h1>Header Works</h1>
+      <img src={require('../assets/images/taplogo.png')} />
+      <Filter/>
     </div>
   );
+
+
 }
 
 export default Header;
