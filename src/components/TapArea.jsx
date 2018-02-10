@@ -1,6 +1,7 @@
 import React from 'react';
 import Tap from './Tap';
 import Staff from './Staff';
+import Filter from './Filter';
 
 function TapArea(){
   let tapList = [
@@ -58,6 +59,7 @@ function TapArea(){
           }
         `}
       </style>
+      <Filter/>
       <div className='tapArea'>
         {tapList.map((tap, index) =>
           <Tap
@@ -70,7 +72,7 @@ function TapArea(){
             key={index}/>
         )}
       </div>
-      <Staff/>
+  
     </div>
   );
 }

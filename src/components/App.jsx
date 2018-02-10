@@ -1,6 +1,7 @@
 import React from 'react';
-// import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
+import Staff from './Staff';
 import TapArea from './TapArea';
 
 
@@ -18,7 +19,10 @@ function App(){
         `}
       </style>
       <Header/>
-      <TapArea/>
+      <Switch>
+        <Route exact path='/' component={TapArea} />
+        <Route path='/staff' component={Staff} />
+      </Switch>      
     </div>
   );
 }
