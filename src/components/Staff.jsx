@@ -9,7 +9,7 @@ function Staff() {
       <AddKeg/>
       <EditKeg/>
     </div>
-  )
-};
+  );
+}
 
 export default Staff;

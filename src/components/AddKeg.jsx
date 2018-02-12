@@ -37,7 +37,7 @@ function AddKeg() {
       </div>
 
     </div>
-  )
-};
+  );
+}
 
 export default AddKeg;
