@@ -1,19 +1,27 @@
-React Week 1
-
-Spent some time to deploy my Tap Room Project for easy comparison.
-https://epi-tap-room.firebaseapp.com/
-
-
 Build Component Diagram
 
 ![Diagram](images/Diagram.png)
 
 
-Unexpected character '�' (
-1:0)
-You may need an appropriate loader to handle this file type.
+## Synopsis
 
-File and URL loader not working
-Local images arent able to be used at this point.
+This is my React Project that is a recreation of an Angular Project at Epicodus.
 
-Moved Images to External Links.
+## Code Example
+
+This project allows you to see what kegs are available and sell beers from them using buttons.
+
+
+## Installation
+
+Enter The Following Commands in Terminal
+ * cd desktop
+ * git clone https://github.com/SamKissee/React-Taproom.git project
+ * cd project
+ * npm install
+ * npm run start
+ * https://localhost:8080
+
+
+## Creators
+ Created by Sam Kissee 2018
