@@ -1,5 +1,6 @@
-![Diagram](images/Diagram.png)
+Build Component Diagram
 
+![Diagram](images/Diagram.png)
 
 ## Synopsis
 
@@ -27,7 +28,7 @@ Enter The Following Commands in Terminal
   Transferring over the project between Angular and React was a bit different than expected. I used bootstrap in the original project and had not yet learned how to implement that in React. That will be a further exploration thing. I also used a lot more components in this project than in angular.
 
   At this point angular seems easier to use mostly because I was using the CLI by this point in Angular and learning the setup of a new library and new packager can be strange.
-  
+
 
 
 ## Creators
