@@ -1,7 +1,7 @@
 Build Component Diagram
 
 ![Diagram](images/Diagram.png)
-![Diagram](images/updatedDiagram.jpg)
+![Diagram](images/updatedDiagram.JPG)
 
 ## Synopsis
 

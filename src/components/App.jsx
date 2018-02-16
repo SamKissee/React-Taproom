@@ -1,8 +1,6 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
-import Staff from './Staff';
-import TapArea from './TapArea';
+import ClassContainer from './ClassContainer';
 import bg from '../assets/images/bg.jpg';
 
 
@@ -17,15 +15,12 @@ function App(){
             background-image: url({bg});
             background-size: cover;
             background-repeat: no-repeat;
-            
+
           }
         `}
       </style>
       <Header/>
-      <Switch>
-        <Route exact path='/' component={TapArea} />
-        <Route path='/staff' component={Staff} />
-      </Switch>
+      <ClassContainer/>
     </div>
   );
 }
