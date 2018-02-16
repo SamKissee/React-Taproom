@@ -9,7 +9,9 @@ This is my React Project that is a recreation of an Angular Project at Epicodus.
 
 ## Code Example
 
-This project allows you to see what kegs are available and sell beers from them using buttons.
+This project allows you to see what kegs are available, add a keg to the list using class and setState
+
+In the future this would allow you to edit invidual kegs, and allow you to add images to the added kegs.
 
 
 ## Installation
