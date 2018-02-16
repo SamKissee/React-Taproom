@@ -61,7 +61,7 @@ class ClassContainer extends React.Component{
           'quantity' : '124'
         }
       ],
-      selectedKeg: null
+      selectedKeg: {}
     };
     this.handleAddKeg = this.handleAddKeg.bind(this);
     this.handleChangeKeg = this.handleChangeKeg.bind(this);
@@ -72,7 +72,9 @@ class ClassContainer extends React.Component{
     this.setState({masterKegList: newKegList});
   }
   handleEditKeg(editedKeg){
-    this.setState({selectedKeg: editedKeg});
+    let newSelect = this.state.selectedKeg;
+    newSelect = editedKeg;
+    this.setState({selectedKeg: newSelect});
   }
   handleChangeKeg(keg){
    this.setState({selectedKeg: keg});

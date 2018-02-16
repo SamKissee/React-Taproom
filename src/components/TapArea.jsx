@@ -3,6 +3,7 @@ import Tap from './Tap';
 import Staff from './Staff';
 import Filter from './Filter';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 
 function TapArea(props){
@@ -31,7 +32,7 @@ function TapArea(props){
             brewer={tap.brewer}
             img={tap.img}
             quantity={tap.quantity}
-            key={tap.id}
+            key={v4()}
             onKegSelect={props.onKegSelect}
           />
         )}
