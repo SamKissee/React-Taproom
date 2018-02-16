@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 
 function TapArea(props){
-  let tapList = props.kegList
+
 
   return (
     <div>
@@ -23,7 +23,7 @@ function TapArea(props){
       </style>
       <Filter/>
       <div className='tapArea'>
-        {tapList.map((tap, index) =>
+        {props.kegList.map((tap) =>
           <Tap
             name={tap.name}
             abv={tap.abv}
@@ -31,7 +31,9 @@ function TapArea(props){
             brewer={tap.brewer}
             img={tap.img}
             quantity={tap.quantity}
-            key={index}/>
+            key={tap.id}
+            onKegSelect={props.onKegSelect}
+          />
         )}
       </div>
 
@@ -39,7 +41,8 @@ function TapArea(props){
   );
 }
 TapArea.propTypes = {
-  kegList: PropTypes.array
+  kegList: PropTypes.array,
+  onKegSelect: PropTypes.func
 };
 
 export default TapArea;

@@ -49,7 +49,7 @@ function AddKeg(props) {
           <input className="form-control" type="text" id="brewer" placeholder="Brewery"   ref={(input) => {_brewer = input;}} />
           <input className="form-control" type="text" id="price" placeholder="Price"   ref={(input) => {_price = input;}} />
           <input className="form-control" type="text" id="abv" placeholder="ABV"   ref={(input) => {_abv = input;}} />
-          <input className="form-control" type="text" id="abv" placeholder="IMG"   ref={(input) => {_img = input;}} />
+          <input className="form-control" id="img" placeholder="IMG"   ref={(input) => {_img = input;}} />
           {/* <select className="form-control" id="img" placeholder="Image"  ref={(input) => {_img = input;}}>
             <option value='hub' >Hub</option>
             <option value='laurelwood'>Laurelwood</option>

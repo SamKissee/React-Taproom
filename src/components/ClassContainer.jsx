@@ -64,22 +64,27 @@ class ClassContainer extends React.Component{
       selectedKeg: null
     };
     this.handleAddKeg = this.handleAddKeg.bind(this);
+    this.handleChangeKeg = this.handleChangeKeg.bind(this);
   }
   handleAddKeg(newKeg){
     let newKegList = this.state.masterKegList.slice();
     newKegList.push(newKeg);
     this.setState({masterKegList: newKegList});
   }
+  handleEditKeg(editedKeg){
+    this.setState({selectedKeg: editedKeg});
+  }
   handleChangeKeg(keg){
    this.setState({selectedKeg: keg});
+   console.log(this.state.selectedKeg.name)
  }
 
   render(){
     return (
       <div>
         <Switch>
-          <Route exact path='/' render={()=><TapArea kegList={this.state.masterKegList} />} />
-          <Route path='/staff' render={()=><Staff onNewKegCreation={this.handleAddKeg} />} />
+          <Route exact path='/' render={()=><TapArea kegList={this.state.masterKegList} onKegSelect={this.handleChangeKeg} />} />
+          <Route path='/staff' render={()=><Staff onNewKegCreation={this.handleAddKeg} onEditKeg={this.handleEditKeg} selectedKeg={this.state.selectedKeg}/>} />
         </Switch>
       </div>
     );

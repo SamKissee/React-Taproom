@@ -71,7 +71,7 @@ function Tap(props){
           <button onClick={removePint} className='buy'>Pint</button>
           <button className='buy'>32oz</button>
           <button className='buy'>64oz</button>
-          <button className='edit'>Edit Keg</button>
+          <button onClick={() => {props.onKegSelect({name: props.name, brewer: props.brewer, abv: props.abv, price: props.price});}} className='edit'>Edit Keg</button>
         </div>
       </div>
     </div>
@@ -84,7 +84,9 @@ Tap.propTypes = {
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  quantity: PropTypes.string.isRequired
+  quantity: PropTypes.string.isRequired,
+  onKegSelect: PropTypes.func
+
 };
 
 export default Tap;
