@@ -12,7 +12,7 @@ function App(){
       <style global jsx>
         {`
           body{
-            background-image: url({bg});
+            background-image: url(${bg});
             background-size: cover;
             background-repeat: no-repeat;
 
