@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Tap(props){
+
+  function removePint(){
+    let quantity = parseInt(props.quantity);
+  }
   return (
     <div>
       <style jsx>
@@ -64,7 +68,7 @@ function Tap(props){
         <p>ABV: {props.abv}</p>
         <p>Quantity: {props.quantity}</p>
         <div>
-          <button className='buy'>Pint</button>
+          <button onClick={removePint} className='buy'>Pint</button>
           <button className='buy'>32oz</button>
           <button className='buy'>64oz</button>
           <button className='edit'>Edit Keg</button>

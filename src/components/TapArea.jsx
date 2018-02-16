@@ -17,6 +17,7 @@ function TapArea(props){
             margin: 10px auto;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
           }
         `}
       </style>

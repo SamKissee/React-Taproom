@@ -13,7 +13,7 @@ function AddKeg(props) {
   function handleNewKeg(event) {
     event.preventDefault();
     props.passKegCreation({abv: _abv.value, brewer: _brewer.value, img: _img.value, name: _name.value, price: _price.value, quantity: 124, id: v4()});
-
+    alert('You added ' + _name.value + ' to the Tap Room!');
     _abv.value = '';
     _brewer.value = '';
     _name.value = '';
