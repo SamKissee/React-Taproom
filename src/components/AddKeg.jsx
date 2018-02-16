@@ -1,7 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
+function AddKeg(props) {
+  let _abv = null;
+  let _brewer = null;
+  let _img = null;
+  let _name = null;
+  let _price = null;
+  let _quantity = null;
 
-function AddKeg() {
+  function handleNewKeg(event) {
+    event.preventDefault();
+    props.passKegCreation({abv: _abv.value, brewer: _brewer.value, img: _img.value, name: _name.value, price: _price.value, quantity: 124, id: v4()});
+
+    _abv.value = '';
+    _brewer.value = '';
+    _img.value = '';
+    _name.value = '';
+    _price.value = '';
+  }
+
   return(
     <div>
       <style global jsx>
@@ -25,19 +44,23 @@ function AddKeg() {
           }
         `}
       </style>
-      <div className="form-group">
+      <form className="form-group" onSubmit={handleNewKeg}>
         <label>New Kegs
-          <input className="form-control" type="text"  placeholder="Beer Name" />
-          <input className="form-control" type="text" name="brewer" placeholder="Brewery" />
-          <input className="form-control" type="text" name="price" placeholder="Price" />
-          <input className="form-control" type="text" name="abv" placeholder="ABV" />
-          <input className="form-control" type="text" name="img" placeholder="Image"/>
-          <button className="btn btn-dark" >Add New Keg</button>
+          <input className="form-control" type="text" id='name' placeholder="Beer Name"   ref={(input) => {_name = input;}} />
+          <input className="form-control" type="text" id="brewer" placeholder="Brewery"   ref={(input) => {_brewer = input;}} />
+          <input className="form-control" type="text" id="price" placeholder="Price"   ref={(input) => {_price = input;}} />
+          <input className="form-control" type="text" id="abv" placeholder="ABV"   ref={(input) => {_abv = input;}} />
+          <input className="form-control" type="text" id="img" placeholder="Image"  ref={(input) => {_img = input;}} />
+          <button type='submit' className="btn btn-dark" >Add New Keg</button>
         </label>
-      </div>
+      </form>
 
     </div>
   );
 }
+
+AddKeg.propTypes = {
+  passKegCreation: PropTypes.func
+};
 
 export default AddKeg;

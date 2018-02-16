@@ -3,6 +3,15 @@ import TapArea from './TapArea';
 import Staff from './Staff';
 import { Switch, Route } from 'react-router-dom';
 
+import hub from '../assets/images/hub.png';
+import laurelwood from '../assets/images/laurelwood.png';
+import lostcoast from '../assets/images/lostcoast.png';
+import motherearth from '../assets/images/motherearth.png';
+import newbelgium from '../assets/images/newbelgium.png';
+import pfriem from '../assets/images/pfriem.png';
+import stone from '../assets/images/stone.png';
+
+
 
 
 class ClassContainer extends React.Component{
@@ -14,7 +23,7 @@ class ClassContainer extends React.Component{
         {
           'abv' : '5',
           'brewer' : 'Mother Earth',
-          'img' : 'http://bit.ly/2BR8XXX',
+          'img' : motherearth,
           'name' : 'Cali Creamin',
           'price' : 'purple',
           'quantity' : '124'
@@ -22,7 +31,7 @@ class ClassContainer extends React.Component{
         {
           'abv' : '8',
           'brewer' : 'Mother Earth',
-          'img' : 'http://bit.ly/2BR8XXX',
+          'img' : motherearth,
           'name' : 'Sintax',
           'price' : 'red',
           'quantity' : '124'
@@ -30,7 +39,7 @@ class ClassContainer extends React.Component{
         {
           'abv' : '6',
           'brewer' : 'Laurelwood',
-          'img' : 'http://bit.ly/2EPIk45',
+          'img' : laurelwood,
           'name' : 'Free Range Red',
           'price' : 'green',
           'quantity' : '124'
@@ -38,7 +47,7 @@ class ClassContainer extends React.Component{
         {
           'abv' : '6.5',
           'brewer' : 'Stone',
-          'img' : 'http://bit.ly/2EezhwB',
+          'img' : stone,
           'name' : 'Stone IPA',
           'price' : 'red',
           'quantity' : '124'
@@ -46,12 +55,12 @@ class ClassContainer extends React.Component{
         {
           'abv' : '4.5',
           'brewer' : 'New Belgium',
-          'img' : 'http://bit.ly/2EgcEYL',
+          'img' : newbelgium,
           'name' : 'Fat Tire',
           'price' : 'purple',
           'quantity' : '124'
         }
-      ];
+      ]
     };
     this.handleAddKeg = this.handleAddKeg.bind(this);
   }
@@ -60,6 +69,7 @@ class ClassContainer extends React.Component{
     newKegList.push(newKeg);
     this.setState({masterKegList: newKegList});
   }
+  
   render(){
     return (
       <div>
