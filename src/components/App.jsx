@@ -17,6 +17,7 @@ function App(){
             background-image: url({bg});
             background-size: cover;
             background-repeat: no-repeat;
+            
           }
         `}
       </style>
