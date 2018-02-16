@@ -16,7 +16,6 @@ function AddKeg(props) {
 
     _abv.value = '';
     _brewer.value = '';
-    _img.value = '';
     _name.value = '';
     _price.value = '';
   }
@@ -50,7 +49,16 @@ function AddKeg(props) {
           <input className="form-control" type="text" id="brewer" placeholder="Brewery"   ref={(input) => {_brewer = input;}} />
           <input className="form-control" type="text" id="price" placeholder="Price"   ref={(input) => {_price = input;}} />
           <input className="form-control" type="text" id="abv" placeholder="ABV"   ref={(input) => {_abv = input;}} />
-          <input className="form-control" type="text" id="img" placeholder="Image"  ref={(input) => {_img = input;}} />
+          <input className="form-control" type="text" id="abv" placeholder="IMG"   ref={(input) => {_img = input;}} />
+          {/* <select className="form-control" id="img" placeholder="Image"  ref={(input) => {_img = input;}}>
+            <option value='hub' >Hub</option>
+            <option value='laurelwood'>Laurelwood</option>
+            <option value='lostcoast'>Lost Coast</option>
+            <option value='motherearth'>Mother Earth</option>
+            <option value='newbelgium'>New Belgium</option>
+            <option value='pfriem'>Pfriem</option>
+            <option value='stone'>Stone</option>
+          </select> */}
           <button type='submit' className="btn btn-dark" >Add New Keg</button>
         </label>
       </form>
