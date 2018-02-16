@@ -60,7 +60,8 @@ class ClassContainer extends React.Component{
           'price' : 'purple',
           'quantity' : '124'
         }
-      ]
+      ],
+      selectedKeg: null
     };
     this.handleAddKeg = this.handleAddKeg.bind(this);
   }
@@ -69,7 +70,10 @@ class ClassContainer extends React.Component{
     newKegList.push(newKeg);
     this.setState({masterKegList: newKegList});
   }
-  
+  handleChangeKeg(keg){
+   this.setState({selectedKeg: keg});
+ }
+
   render(){
     return (
       <div>
